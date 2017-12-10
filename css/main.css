@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container, .row{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+[class *= "col-"] {
+  float: left;
+  padding-top:26%;
+}
+.col-4, .img{
+  width: 33.33333333%;
+}
+/*Para mobile*/
+@media screen  and (max-width:768px){
+  body{
+    /*Imagen de fondo se adapte al tamaño de la pantalla*/
+    /* “background-size: cover”--->Nos permite aumentar el tamaño de la imagen de fondo*/
+    background: url(../assets/images/night.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+  .img{
+    content: url(../assets/images/kitten-small.png); 
+  }
+ }      	
+ /*Para Tablet*/
+ @media screen  and (min-width:768px) and (max-width:992px){
+  body{
+    /*Imagen de fondo se adapte al tamaño de la pantalla*/
+    /* “background-size: cover”--->Nos permite aumentar el tamaño de la imagen de fondo*/
+    background: url(../assets/images/dawn.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }    
+  .img{
+    content: url(../assets/images/kitten-large.png);
+   }
+ }
+/*Para Desktop*/
+@media screen  and (min-width:992px){
+  body{
+    /*Imagen de fondo se adapte al tamaño de la pantalla*/
+    /* “background-size: cover”--->Nos permite aumentar el tamaño de la imagen de fondo*/
+    background: url(../assets/images/sunny-day.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+       } 
+  .img{
+    content: url(../assets/images/kitten-medium.png);
+      }
+ }
+ 
+ 
